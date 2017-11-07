@@ -10,6 +10,13 @@ namespace Calculator__CLI_
     {
         static void Main(string[] args)
         {
+            string userInput = "";
+            do
+            {
+                Console.WriteLine("Choose the operation and press Enter:\n\tQ - Quit");
+                userInput = Console.ReadLine();
+                userInput.ToLower();
+            } while (userInput != "q");
         }
     }
 }
