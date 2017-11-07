@@ -15,7 +15,7 @@ namespace Calculator__CLI_
             {
                 Console.WriteLine("Choose the operation and press Enter:\n\tQ - Quit");
                 userInput = Console.ReadLine();
-                userInput.ToLower();
+                userInput = userInput.ToLower();
             } while (userInput != "q");
         }
     }
