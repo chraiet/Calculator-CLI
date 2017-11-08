@@ -16,6 +16,8 @@ namespace Calculator__CLI_
             do
             {
                 Console.WriteLine("Choose the operation and press Enter:\n\t1 - Add\n\tQ - Quit");
+
+                //  Get user input.
                 userInput = Console.ReadLine();
                 userInput = userInput.ToLower();
 
