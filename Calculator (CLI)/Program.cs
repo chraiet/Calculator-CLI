@@ -15,7 +15,7 @@ namespace Calculator__CLI_
             string userInput = "";
             do
             {
-                Console.WriteLine("Choose the operation and press Enter:\n\t1 - Add\n\tQ - Quit");
+                Console.WriteLine("Choose the operation and press Enter:\n\t1 - Add\n\n\t2 - Substract\n\tQ - Quit");
 
                 //  Get user input.
                 userInput = Console.ReadLine();
@@ -36,6 +36,19 @@ namespace Calculator__CLI_
                         double.TryParse(b, out numberB);
                         double resultAdd = Math.Add(numberA, numberB);
                         Console.WriteLine($"The result of the addition is {resultAdd}");
+                        break;
+                    case "2":
+                    case "substract":
+                        Console.WriteLine("Choose first number: ");
+                        string c = Console.ReadLine();
+                        Console.WriteLine("Choose second number: ");
+                        string d = Console.ReadLine();
+                        double numberC;
+                        double.TryParse(c, out numberC);
+                        double numberD;
+                        double.TryParse(d, out numberD);
+                        double resultSubstract = Math.Substract(numberC, numberD);
+                        Console.WriteLine($"The result of the substraction is {resultSubstract}");
                         break;
                     default:
                         Console.WriteLine("This operation does not exist. Please try again.");
