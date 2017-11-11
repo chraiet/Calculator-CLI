@@ -22,5 +22,11 @@ namespace Calculator__CLI_
         {
             return numberA - numberB;
         }
+
+        //  Multiply operation.
+        public static double Multiply(double numberA, double numberB)
+        {
+            return numberA * numberB;
+        }
     }
 }
